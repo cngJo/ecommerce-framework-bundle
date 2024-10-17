@@ -66,10 +66,9 @@ public function paymentAction(Request $request): Response
 }
 ```
 
-#### payment.html.php
+#### payment.html.twig
 
 ```twig
-?>
 <form method="post" action="{{ pimcore_url({action: 'confirm'}, 'checkout', true) }}">
 
     {% if sourceOrders is not empty %}
